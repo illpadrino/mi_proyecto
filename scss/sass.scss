@@ -1,0 +1,182 @@
+/*declaración de variable: signo de dolar + nombre de vaiable. ejemplo: $colorbg: yellow; */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@mixin footer__ul () {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+@mixin footer__ul__li () {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+@mixin footer__ul__li__a__img ($ancho) {
+    width: $ancho;
+}
+
+
+
+.header{
+    box-shadow: -10px 2px 2px rgba(0, 0, 0, 0.2);
+    width: 100vw;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container__logo{
+    width: 150px;
+    height:150px;
+    margin: auto;
+    margin-right: 60px;
+}
+
+.logo__img{
+    width: 100%;
+}
+
+.ul__links{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: auto;
+}
+
+.li__link{
+    margin-right: 20px;   
+}
+
+.a__links{
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 00.03em;
+    color: #f7931e;
+    text-transform: uppercase;
+    font-family: 'roboto';
+}
+
+.a__links:hover{
+    background-color:  rgba(0, 0, 0, 0.2);
+}
+
+.container__menu__icon{
+    display: none;
+}
+
+
+
+.gallery__container{
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+}
+
+
+.container__photo{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.4);
+    transition: 3s;
+}
+
+.container__photo:hover{
+    transform: rotatey(360deg);
+}
+
+
+.container__photo img{
+    width: 100%;
+    
+}
+
+footer{
+    margin-top: 70px;
+    box-shadow: 10px -2px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'roboto';
+}
+
+footer ul{
+    @include footer__ul;
+}
+
+footer ul li{
+    @include footer__ul__li;
+}
+
+footer ul li a img {
+    @include footer__ul__li__a__img(100%);
+}
+
+.pie{
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.pie p{
+    font-size: 25px;
+    font-family: roboto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px){
+    .ul__links{
+        display: none;
+    }
+
+    .container__menu__icon{
+        display: block;
+        margin-right: 20px;
+        font-size: 25px;
+    }
+
+    .container__logo{
+        width: 100px;
+        height:100px;
+        margin-left: 20px;
+        
+    }
+
+    .gallery__container{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    
+.container__photo{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+}

@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    flex-direction: row-reverse;
+    align-items: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url(../img/WhatsApp\ Image\ 2021-07-03\ at\ 7.29.05\ PM.jpeg);
+    
+    
+}
+
+.formulario{
+    flex-wrap: wrap;
+    display: inline-block;
+    width: 450px;
+    height: 600px;
+    margin: 20px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 8px;
+}
+
+.input{
+    width: 80%;
+    margin: 20px 0px 5px 40px;
+    padding: 5px;
+    border-radius: 8px;
+   
+}
+
+
+h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*REDES*/
+
+.redes {
+    display: flex;
+  /*display: inline-block;*/  /*Esta propiedad no dejaba que se aplicara el @media cuery()averiguar porque.*/
+    flex-direction: column;
+}
+
+
+.whatsApp{
+    width: 55px;
+    border-radius: 50%;
+    
+}
+
+
+.instagram{
+    width: 50px;
+}
+
+.facebook{
+    width: 50px;
+}
+
+a img {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+@media all and (max-width:768px){
+    .redes{
+        flex-direction: row;
+    
+    }
+
+   
+}
