@@ -87,26 +87,29 @@ h2{
 
 .servicios__electricos ul li{
     margin: 5px;
+    margin-bottom: 10px;
     font-size: 17px;
     letter-spacing: 00.03em;
-    list-style: none;
+    /* list-style: none; */
 }
 
 
 
 .servicios__refrigeracion ul li{
     margin: 5px;
+    margin-bottom: 10px;
     font-size: 17px;
     letter-spacing: 00.03em;
-    list-style: none;
+    /* list-style: none; */
 }
 
 
 .servicios__plomeria ul li{
     margin: 5px;
+    margin-bottom: 10px;
     font-size: 17px;
     letter-spacing: 00.03em;
-    list-style: none;
+    /* list-style: none; */
 }
 
 
@@ -127,6 +130,7 @@ h2{
     width: 100px;
     height: 100px;
     margin-top: 20px;
+    margin-right: 300px;
 
     animation-name: electricidad__img;
     animation-iteration-count: infinite;
@@ -166,6 +170,7 @@ h2{
     width: 100px;
     height: 100px;
     margin-top: 40px;
+    margin-right: 300px;
 
     animation-name: refrigeracion__img;
     animation-iteration-count: infinite;
@@ -206,6 +211,7 @@ h2{
     width: 100px;
     height: 100px;
     margin-top: 20px;
+    margin-right: 300px;
 
     animation-name: plomeria__img;
     animation-iteration-count: infinite;
@@ -274,9 +280,9 @@ footer ul li a img:hover{
     width: 60px;
     border-radius:50%;
     position: fixed;
-    right: -25px;
+    right: 6px;
     bottom: 110px;
-    margin-right: 50px;
+    /* margin-right: 50px; */
     }
 
 
@@ -335,6 +341,13 @@ footer ul li a img:hover{
             margin: auto;
             margin-top: 20px;
         }
+
+        footer ul li {
+            width: 30px;
+            height: 30px;
+            margin: 20px;
+        }
+        
     
         footer ul li a img{
             width: 100%;
