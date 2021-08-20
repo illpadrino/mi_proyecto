@@ -39,7 +39,7 @@
   letter-spacing: 00.03em;
   color: #f7931e;
   text-transform: uppercase;
-  font-family: 'roboto'; }
+  font-family: 'roboto'; font-weight: bolder;}
 
 .a__links:hover {
   background-color: rgba(0, 0, 0, 0.2); }
