@@ -274,7 +274,7 @@ footer ul li a img:hover{
     width: 60px;
     border-radius:50%;
     position: fixed;
-    right: 0px;
+    right: -25px;
     bottom: 110px;
     margin-right: 50px;
     }
@@ -321,6 +321,7 @@ footer ul li a img:hover{
 
         .refrigeracion__img{
             margin: 0 auto;
+            margin-top: 25px;
         }
 
 
