@@ -13,7 +13,7 @@ body{
  
 header{
     box-shadow: -10px 2px 2px rgba(0, 0, 0, 0.2);
-    width: 100vw;
+    width: 100%;
 }
 
 header nav{
@@ -69,6 +69,7 @@ h2{
     text-transform: uppercase;
     font-family: 'roboto';
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .titulo__electricidad h2 i{
@@ -164,7 +165,7 @@ h2{
 .refrigeracion__img{
     width: 100px;
     height: 100px;
-    margin-top: 20px;
+    margin-top: 40px;
 
     animation-name: refrigeracion__img;
     animation-iteration-count: infinite;
@@ -273,8 +274,8 @@ footer ul li a img:hover{
     width: 60px;
     border-radius:50%;
     position: fixed;
-    right: 0;
-    top: 570px;
+    right: 0px;
+    bottom: 110px;
     margin-right: 50px;
     }
 
@@ -291,13 +292,14 @@ footer ul li a img:hover{
     
         .barra{
             display: block;
+            margin-right: 10px;
     
         }
     
         div .logo{
             width: 100px;
             height:100px;
-            margin-left: 20px;
+            margin-left: 10px;
         }
 
         .electricidad{
@@ -333,5 +335,11 @@ footer ul li a img:hover{
             margin-top: 20px;
         }
     
-       
+        footer ul li a img{
+            width: 100%;
+        }
+        
+        footer ul li a img:hover{
+            transform: none;
+        }
     }
