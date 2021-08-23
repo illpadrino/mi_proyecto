@@ -75,56 +75,9 @@ div .logo{
 }
 
 
-@media screen and (max-width: 858px) {
-    nav{
-        height: 150px;
-    }
-
-   
-
-    .barra{
-        display: inline-flex;
-    }
-
-    header nav ul li a{
-        font-size: 16px;
-    }
-
-    header nav ul li{
-        position: fixed;
-        width: 100vw;
-        height: calc(100% - 150px);
-        top: 100vh;
-        text-align: center;
-        flex-direction: column;
-    }
-
-   
-
-
-
-   
-}
-
-@media (max-width: 430px){
-    h1{
-        font-size: 20px;
-        letter-spacing: 0.03em;
-    }
-
-    div .logo{
-        width: 100px;
-        height:100px;
-        margin-left: 5px;
-    }
-
-    .item{
-        margin: auto;
-    }
-}
 
 .carousel-item{
-    width: 100vw;
+    width: 100%;
     
 }
 
@@ -143,27 +96,6 @@ img .foto{
     margin-top: 10px;
     
 }
-
-/* .titulo{
-    width: 900px;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    background-color:  #f7931e;
-    margin-bottom: 10px;
-    border-radius: 30px;
-    
-}
-
-h1{
-    font-family: 'Roboto', sans-serif;
-    font-size: 60px;
-    
-} */
-
-
-
-
 
 
 .sectionUno{
@@ -233,24 +165,55 @@ p{
     margin-top: 12px;
 }
 
-@media (max-width: 600px)
+@media (max-width: 768px)
 {
+
+    nav{
+        /* height: 100px; */
+    }
+
+    div .logo{
+        width: 100px;
+        height:100px;
+        margin-left: 10px;
+    }
+
+   
+
+    .barra{
+        display: inline-flex;
+        margin-right: 10px;
+    }
+
+    header nav ul li a{
+        font-size: 16px;
+    }
+
+    header nav ul li{
+        position: fixed;
+        width: 100%;
+        height: calc(100% - 150px);
+        top: 100vh;
+        text-align: center;
+        flex-direction: column;
+    }
+
     .row{
         display: flex;
         flex-wrap: wrap;
-        width: 100vw;
+        width: 100%;
         margin: 0 auto;
         margin: 0 8px;
     }
 
     .container{
         margin-top: 10px;
-        max-width: 90vw;
+        max-width: 90%;
         
     }
 
     .titulo{
-        width: 100vw;
+        width: 100%;
         text-align: center;
         padding: 20px;
         background-color:  #f7931e;
@@ -260,7 +223,7 @@ p{
     }
 
     .sectionUno{
-        max-width: 95vw;
+        max-width: 95%;
         background-color: rgba(0, 0, 0, 0.8);
         /* box-shadow: 0 5px 15px rgba(0, 0, 0, .5) ; */
         transition: 1s;
@@ -272,7 +235,7 @@ p{
 
     .sectionDos{
 
-        max-width: 95vw;
+        max-width: 95%;
         background-color: rgba(0, 0, 0, 0.8);
         border-radius: 10px;
         margin-bottom: 10px;
@@ -316,26 +279,35 @@ p{
         order: 3;
     }
 
-    .whatSapp{
-        width: 40px;
-        border-radius:50%;
-        position: fixed;
-        right: 0;
-        top: 550px;
-        margin-right: 10px;
-        }
 
         
 footer ul{
     height: 100px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
 }
 
+
+
+footer ul li {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
 }
+
+footer ul li a img{
+    width: 100%;
+}
+
+footer ul li a img:hover{
+    transform: none;
+}
+
+}
+
 
 
 /* footer */
@@ -385,10 +357,9 @@ footer ul li a img:hover{
     border-radius:50%;
     position: fixed;
     right: 6px;
-    /* top: 570px; */
     bottom: 110px;
-    /* margin-right: 50px; */
-    }
+   /* margin-right: 50px; */
+}
 
     /* carusel */
 

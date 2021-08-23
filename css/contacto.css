@@ -72,10 +72,53 @@ a img {
 }
 
 @media all and (max-width:768px){
-    .redes{
+    /* .redes{
+        flex-wrap: wrap;
         flex-direction: row;
-    
+        align-items: center;
+        justify-content: space-around;
+    } */
+
+    .formulario{
+        flex-wrap: wrap;
+        display: inline-block;
+        width: 100%;
+        height: 600px;
+        margin: 5px;
+        margin-top: 30px;
+        background-color: rgba(0,0,0,0.4);
+        border-radius: 8px;
+    }
+
+    .redes{
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .input{
+        width: 75%;
+        border-radius: 8px;
+       
     }
 
    
+    .whatsApp{
+        width: 45px;
+        border-radius: 50%;
+        
+    }
+    
+    
+    .instagram{
+        width: 40px;
+    }
+    
+    .facebook{
+        width: 40px;
+    }
+    
+
+
 }
